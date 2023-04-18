@@ -196,7 +196,7 @@ def handle_client_connection(conn: socket.socket, addr: typing.Tuple, document_r
             response = HTTPResponse.error(status)
             logging.info(f'{addr}: HTTP exception "{response.status}"')
         except Exception:
-            logging.exception(f'{addr}: Error.')
+            logging.exception(f'{addr}: Error')
             status = HTTPStatus.INTERNAL_SERVER_ERROR
             response = HTTPResponse.error(status)
 

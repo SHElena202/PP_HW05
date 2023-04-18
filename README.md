@@ -29,8 +29,8 @@ Content-Length, Content-Type, Connection
 Что проверять:
 Проходят тесты https://github.com/s-stupnikov/http-test-suite
 http://localhost/httptest/wikipedia_russia.html корректно показывается в браузере
-Нагрузочное тестирование: запускаем ab -n 50000 -c 100 -r
-http://localhost:8080/ и смотрим результат
+Нагрузочное тестирование: запускаем ab -n 50000 -c 100 -r http://localhost:8080/ 
+и смотрим результат
 Опционально: вместо ab воспользоваться wrk
 
 Что на выходе:

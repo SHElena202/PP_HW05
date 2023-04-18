@@ -9,7 +9,7 @@ from pathlib import Path
 
 def parse_args():
     parser = ArgumentParser(description=__doc__)
-    parser.add_argument("-r", "--root", default=None, required=True, help="Document root")
+    parser.add_argument("-r", "--root", default="httptest-suite-master", help="Document root")
     parser.add_argument("-w", "--workers", type=int, default=4, help="Number of workers")
     parser.add_argument("-a", "--address", default="127.0.0.1", help="Server address")
     parser.add_argument("-p", "--port", type=int, default="8080", help="Server port")
